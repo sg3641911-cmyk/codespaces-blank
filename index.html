@@ -2,10 +2,445 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Привет мир</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturel Studio — салоны красоты в Москве</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    Привет мир!
+    <!-- Header with Responsive Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <a href="/" class="logo">
+                    <span class="logo-text">Naturel</span>
+                    <span class="logo-subtext">Studio</span>
+                </a>
+                
+                <!-- Desktop/Tablet Navigation -->
+                <nav class="nav-desktop" role="navigation">
+                    <ul class="menu">
+                        <li class="menu-item has-submenu">
+                            <a href="#salons">Салоны</a>
+                            <ul class="submenu">
+                                <li><a href="#salon-tulskaya">Тульская</a></li>
+                                <li><a href="#salon-ramenki">Раменки</a></li>
+                                <li><a href="#salon-belorusskaya">Белорусская</a></li>
+                                <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
+                                <li><a href="#salon-moscow-city">Москва-Сити</a></li>
+                                <li><a href="#salon-akademicheskaya">Академическая</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="#services">Услуги</a>
+                            <ul class="submenu">
+                                <li><a href="#hair">Парикмахерские</a></li>
+                                <li><a href="#cosmetology">Косметология</a></li>
+                                <li><a href="#makeup">Визаж</a></li>
+                                <li><a href="#massage">Массаж</a></li>
+                                <li><a href="#nails">Маникюр & Педикюр</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#gallery">Галерея</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Action Buttons -->
+                <div class="header-actions">
+                    <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+                    <button class="btn btn-primary" data-modal="booking">Записаться</button>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Off-canvas) -->
+        <div class="mobile-menu-overlay"></div>
+        <nav class="nav-mobile">
+            <div class="mobile-menu-header">
+                <a href="/" class="logo">
+                    <span class="logo-text">Naturel</span>
+                    <span class="logo-subtext">Studio</span>
+                </a>
+                <button class="mobile-menu-close" aria-label="Закрыть меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu-body">
+                <ul class="menu">
+                    <li class="menu-item has-submenu">
+                        <a href="#salons" class="menu-link">Салоны</a>
+                        <button class="submenu-toggle" aria-expanded="false"></button>
+                        <ul class="submenu">
+                            <li><a href="#salon-tulskaya">Тульская</a></li>
+                            <li><a href="#salon-ramenki">Раменки</a></li>
+                            <li><a href="#salon-belorusskaya">Белорусская</a></li>
+                            <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
+                            <li><a href="#salon-moscow-city">Москва-Сити</a></li>
+                            <li><a href="#salon-akademicheskaya">Академическая</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <a href="#services" class="menu-link">Услуги</a>
+                        <button class="submenu-toggle" aria-expanded="false"></button>
+                        <ul class="submenu">
+                            <li><a href="#hair">Парикмахерские</a></li>
+                            <li><a href="#cosmetology">Косметология</a></li>
+                            <li><a href="#makeup">Визаж</a></li>
+                            <li><a href="#massage">Массаж</a></li>
+                            <li><a href="#nails">Маникюр & Педикюр</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#gallery" class="menu-link">Галерея</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacts" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+                    <button class="btn btn-primary" data-modal="booking">Записаться</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920" alt="Салон красоты">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Природная красота вашего стиля</h1>
+                    <p class="slide-description">Мы создаём естественные образы, подчёркивая вашу уникальность</p>
+                    <button class="btn btn-primary btn-large" data-modal="booking">Записаться онлайн</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-arrows">
+            <button class="arrow prev" aria-label="Предыдущий слайд">‹</button>
+            <button class="arrow next" aria-label="Следующий слайд">›</button>
+        </div>
+        <div class="hero-dots">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2 class="section-title">Naturel Studio — это...</h2>
+                <div class="philosophy-text">
+                    <p>Салон красоты «НАТЮРЕЛЬ» рад открыть свои двери перед ценителями прекрасного! Мы работаем для того, чтобы делать мир красивее, а вас, наши дорогие посетители, ещё и счастливее.</p>
+                    <p>Как Вы, наверное, знаете, в переводе с французского слово <strong>"naturel"</strong> означает <strong>"настоящий"</strong>, <strong>"чистый"</strong>, <strong>"естественный"</strong>. Именно эти три слова являются девизом нашего салона красоты!</p>
+                    <p>Наш лозунг <strong>«Природная красота Вашего стиля»</strong>! И именно этой линии мы держимся. Вы будете крайне удивлены, узнав, что способны выглядеть обворожительно, не утратив при этом естественность.</p>
+                </div>
+                <div class="philosophy-image">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600" alt="Салон">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salons Section -->
+    <section class="salons" id="salons">
+        <div class="container">
+            <h2 class="section-title">6 салонов в Москве</h2>
+            <div class="salons-grid">
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Тульская">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Тульская</h3>
+                        <p>Духовской переулок, 17, стр. 11</p>
+                        <p>м. Тульская</p>
+                        <a href="tel:+74951234501">+7 (495) 123-45-01</a>
+                    </div>
+                </div>
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Раменки">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Раменки</h3>
+                        <p>Раменки, ул. Мосфильмовская, 88</p>
+                        <p>м. Университет</p>
+                        <a href="tel:+74951234502">+7 (495) 123-45-02</a>
+                    </div>
+                </div>
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1560076536-fc53f7d21e60?w=400" alt="Белорусская">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Белорусская</h3>
+                        <p>ул. Тверская, 15</p>
+                        <p>м. Белорусская</p>
+                        <a href="tel:+74951234503">+7 (495) 123-45-03</a>
+                    </div>
+                </div>
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Комсомольская">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Комсомольская</h3>
+                        <p>Комсомольская пл., 3</p>
+                        <p>м. Комсомольская</p>
+                        <a href="tel:+74951234504">+7 (495) 123-45-04</a>
+                    </div>
+                </div>
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Москва-Сити">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Москва-Сити</h3>
+                        <p>Пресненская набережная, 10</p>
+                        <p>м. Деловой Центр</p>
+                        <a href="tel:+74951234505">+7 (495) 123-45-05</a>
+                    </div>
+                </div>
+                <div class="salon-card">
+                    <div class="salon-image">
+                        <img src="https://images.unsplash.com/photo-1560076536-fc53f7d21e60?w=400" alt="Академическая">
+                    </div>
+                    <div class="salon-info">
+                        <h3>Академическая</h3>
+                        <p>ул. Вавилова, 13</p>
+                        <p>м. Академическая</p>
+                        <a href="tel:+74951234506">+7 (495) 123-45-06</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">💇</div>
+                    <h3>Парикмахерские услуги</h3>
+                    <ul>
+                        <li>Стрижки и укладки</li>
+                        <li>Окрашивание (Balayage, Airtouch)</li>
+                        <li>Лечение волос</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">💅</div>
+                    <h3>Маникюр & Педикюр</h3>
+                    <ul>
+                        <li>Классический маникюр</li>
+                        <li>Аппаратный педикюр</li>
+                        <li>Наращивание ногтей</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">✨</div>
+                    <h3>Косметология</h3>
+                    <ul>
+                        <li>Уход за лицом</li>
+                        <li>Чистка</li>
+                        <li>Массаж лица</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">💄</div>
+                    <h3>Визаж</h3>
+                    <ul>
+                        <li>Дневной макияж</li>
+                        <li>Вечерний макияж</li>
+                        <li>Свадебный макияж</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🌿</div>
+                    <h3>Массаж</h3>
+                    <ul>
+                        <li>Классический массаж</li>
+                        <li>Антицеллюлитный массаж</li>
+                        <li>Расслабляющий массаж</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🎓</div>
+                    <h3>Обучение</h3>
+                    <ul>
+                        <li>Курсы парикмахеров</li>
+                        <li>Курсы визажистов</li>
+                        <li>Мастер-классы</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400" alt="Работа 1">
+                    <div class="gallery-overlay">
+                        <span>Стрижка и окрашивание</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400" alt="Работа 2">
+                    <div class="gallery-overlay">
+                        <span>Вечерний макияж</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Работа 3">
+                    <div class="gallery-overlay">
+                        <span>Маникюр</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Работа 4">
+                    <div class="gallery-overlay">
+                        <span>Косметология</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="booking-cta">
+        <div class="container">
+            <h2>Запишитесь на консультацию</h2>
+            <p>Первичная консультация специалиста — бесплатно</p>
+            <button class="btn btn-primary btn-large" data-modal="booking">Выбрать услугу</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="logo">
+                        <span class="logo-text">Naturel</span>
+                        <span class="logo-subtext">Studio</span>
+                    </a>
+                    <p class="footer-mission">Природная красота вашего стиля</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Салоны</h4>
+                    <ul>
+                        <li><a href="#salon-tulskaya">Тульская</a></li>
+                        <li><a href="#salon-ramenki">Раменки</a></li>
+                        <li><a href="#salon-belorusskaya">Белорусская</a></li>
+                        <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
+                        <li><a href="#salon-moscow-city">Москва-Сити</a></li>
+                        <li><a href="#salon-akademicheskaya">Академическая</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#hair">Парикмахерские</a></li>
+                        <li><a href="#nails">Маникюр & Педикюр</a></li>
+                        <li><a href="#cosmetology">Косметология</a></li>
+                        <li><a href="#makeup">Визаж</a></li>
+                        <li><a href="#massage">Массаж</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p>Email: <a href="mailto:info@naturel-studio.ru">info@naturel-studio.ru</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="VK">🎭</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Naturel Studio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>×</button>
+            <h3>Онлайн-запись</h3>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Услуга</label>
+                    <select id="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="hair">Парикмахерские услуги</option>
+                        <option value="nails">Маникюр & Педикюр</option>
+                        <option value="cosmetology">Косметология</option>
+                        <option value="makeup">Визаж</option>
+                        <option value="massage">Массаж</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="salon">Салон</label>
+                    <select id="salon">
+                        <option value="">Выберите салон</option>
+                        <option value="tulskaya">Тульская</option>
+                        <option value="ramenki">Раменки</option>
+                        <option value="belorusskaya">Белорусская</option>
+                        <option value="komsomolskaya">Комсомольская</option>
+                        <option value="moscow-city">Москва-Сити</option>
+                        <option value="akademicheskaya">Академическая</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
