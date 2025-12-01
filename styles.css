@@ -1058,3 +1058,8 @@ button {
         font-size: 12px;
     }
 }
+/* ===== Соц-иконки ===== */
+.social-links{display:flex;gap:1rem;margin-top:1rem}
+.social-links a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--color-white);box-shadow:0 2px 6px rgba(0,0,0,.1);transition:var(--transition)}
+.social-links a:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.social-links svg{width:20px;height:20px;fill:var(--color-primary)}

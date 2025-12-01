@@ -376,3 +376,11 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
+/* ====== Плавный скролл к соц-ссылкам (если вдруг захотите якорь) ====== */
+document.querySelectorAll('.social-links a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t)t.scrollIntoView({behavior:'smooth'});
+  });
+});
