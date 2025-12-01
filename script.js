@@ -70,7 +70,7 @@ const slideData = [
     {
         title: 'Природная красота вашего стиля',
         description: 'Мы создаём естественные образы, подчёркивая вашу уникальность',
-        image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920'
+        image: 'images/salon_stydio1.jpg'
     },
     {
         title: 'Профессиональные стилисты',
