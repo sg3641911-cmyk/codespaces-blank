@@ -1,468 +1,450 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naturel Studio — салоны красоты в Москве</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Mistral — салон красоты в стихии свежести</title>
+    <meta name="description" content="Mistral Studio — это салон красоты, где стихия ветра и природная свежесть вдохновляют на создание легких, естественных и индивидуальных образов.">
+    <meta name="keywords" content="салон красоты, Mistral, свежесть, ветер, натуральная косметика, индивидуальный уход, парикмахерские услуги, косметология">
+    <meta name="author" content="Mistral Studio">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌬️</text></svg>">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Preload Critical Images -->
+    <link rel="preload" href="https://i.pinimg.com/736x/89/11/1e/89111e6e286a2bc84df3d8898c7dc75b.jpg" as="image">
+    <link rel="preload" href="https://i.pinimg.com/736x/33/6a/43/336a43b6094b503e0d4884d41ec6a794.jpg" as="image">
 </head>
 <body>
-    <!-- Header with Responsive Navigation -->
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <!-- Logo -->
-                <a href="/" class="logo">
-                    <span class="logo-text">Naturel</span>
-                    <span class="logo-subtext">Studio</span>
+    <!-- ==================== SKIP TO MAIN CONTENT (Accessibility) ==================== -->
+    <a href="#main-content" class="skip-to-main">Перейти к основному контенту</a>
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="main-header" id="header" role="banner">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="brand">
+                <a href="/" class="logo-link" aria-label="Mistral Studio — вернуться на главную">
+                    <div class="logo-symbol" aria-hidden="true">🌬️</div>
+                    <div class="logo-text">
+                        <span class="logo-primary">Mistral</span>
+                    </div>
                 </a>
-                
-                <!-- Desktop/Tablet Navigation -->
-                <nav class="nav-desktop" role="navigation">
-                    <ul class="menu">
-                        <li class="menu-item has-submenu">
-                            <a href="#salons">Салоны</a>
-                            <ul class="submenu">
-                                <li><a href="#salon-tulskaya">Тульская</a></li>
-                                <li><a href="#salon-ramenki">Раменки</a></li>
-                                <li><a href="#salon-belorusskaya">Белорусская</a></li>
-                                <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
-                                <li><a href="#salon-moscow-city">Москва-Сити</a></li>
-                                <li><a href="#salon-akademicheskaya">Академическая</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item has-submenu">
-                            <a href="#services">Услуги</a>
-                            <ul class="submenu">
-                                <li><a href="#hair">Парикмахерские</a></li>
-                                <li><a href="#cosmetology">Косметология</a></li>
-                                <li><a href="#makeup">Визаж</a></li>
-                                <li><a href="#massage">Массаж</a></li>
-                                <li><a href="#nails">Маникюр & Педикюр</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#about">О нас</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#gallery">Галерея</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <!-- Action Buttons -->
-                <div class="header-actions">
-                    <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
-                    <button class="btn btn-primary" data-modal="booking">Записаться</button>
-                </div>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" aria-label="Открыть меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
-        </div>
-        
-        <!-- Mobile Menu (Off-canvas) -->
-        <div class="mobile-menu-overlay"></div>
-        <nav class="nav-mobile">
-            <div class="mobile-menu-header">
-                <a href="/" class="logo">
-                    <span class="logo-text">Naturel</span>
-                    <span class="logo-subtext">Studio</span>
-                </a>
-                <button class="mobile-menu-close" aria-label="Закрыть меню">
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <div class="mobile-menu-body">
-                <ul class="menu">
-                    <li class="menu-item has-submenu">
-                        <a href="#salons" class="menu-link">Салоны</a>
-                        <button class="submenu-toggle" aria-expanded="false"></button>
-                        <ul class="submenu">
-                            <li><a href="#salon-tulskaya">Тульская</a></li>
-                            <li><a href="#salon-ramenki">Раменки</a></li>
-                            <li><a href="#salon-belorusskaya">Белорусская</a></li>
-                            <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
-                            <li><a href="#salon-moscow-city">Москва-Сити</a></li>
-                            <li><a href="#salon-akademicheskaya">Академическая</a></li>
-                        </ul>
+
+            <!-- Desktop Navigation -->
+            <nav class="primary-nav" aria-label="Основная навигация" id="primary-nav">
+                <ul class="nav-list" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="#philosophy" class="nav-link" role="menuitem">Философия</a>
                     </li>
-                    <li class="menu-item has-submenu">
-                        <a href="#services" class="menu-link">Услуги</a>
-                        <button class="submenu-toggle" aria-expanded="false"></button>
-                        <ul class="submenu">
-                            <li><a href="#hair">Парикмахерские</a></li>
-                            <li><a href="#cosmetology">Косметология</a></li>
-                            <li><a href="#makeup">Визаж</a></li>
-                            <li><a href="#massage">Массаж</a></li>
-                            <li><a href="#nails">Маникюр & Педикюр</a></li>
-                        </ul>
+                    <li class="nav-item" role="none">
+                        <a href="#rituals" class="nav-link" role="menuitem">Ритуалы</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#about" class="menu-link">О нас</a>
+                    <li class="nav-item" role="none">
+                        <a href="#services" class="nav-link" role="menuitem">Услуги</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#gallery" class="menu-link">Галерея</a>
+                    <li class="nav-item" role="none">
+                        <a href="#gallery" class="nav-link" role="menuitem">Галерея</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-link">Контакты</a>
+                    <li class="nav-item" role="none">
+                        <a href="#contact" class="nav-link" role="menuitem">Контакты</a>
                     </li>
                 </ul>
-                <div class="mobile-menu-footer">
-                    <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
-                    <button class="btn btn-primary" data-modal="booking">Записаться</button>
-                </div>
+            </nav>
+
+            <!-- Call to Action & Mobile Menu Toggle -->
+            <div class="header-actions">
+                <a href="tel:+79667430677" class="phone-button" aria-label="Позвонить по номеру +7 966 743-06-77">
+                    <span class="phone-icon" aria-hidden="true">📞</span>
+                    <span class="phone-text">+7 (966) 743-06-77</span>
+                </a>
+                <button class="cta-button" data-modal="booking" id="header-cta">
+                    <span>Записаться</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+                    <span class="hamburger-line" id="line1"></span>
+                    <span class="hamburger-line" id="line2"></span>
+                    <span class="hamburger-line" id="line3"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Off-Canvas) -->
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" aria-hidden="true">
+            <div class="mobile-nav-header">
+                <a href="/" class="mobile-logo" aria-label="Mistral Studio — главная">
+                    <span class="mobile-logo-text">Mistral</span>
+                </a>
+                <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Закрыть меню">
+                    <span class="close-icon">×</span>
+                </button>
+            </div>
+            <ul class="mobile-nav-list" role="menu">
+                <li class="mobile-nav-item" role="none">
+                    <a href="#philosophy" class="mobile-nav-link" role="menuitem" tabindex="-1">Философия</a>
+                </li>
+                <li class="mobile-nav-item" role="none">
+                    <a href="#rituals" class="mobile-nav-link" role="menuitem" tabindex="-1">Ритуалы</a>
+                </li>
+                <li class="mobile-nav-item" role="none">
+                    <a href="#services" class="mobile-nav-link" role="menuitem" tabindex="-1">Услуги</a>
+                </li>
+                <li class="mobile-nav-item" role="none">
+                    <a href="#gallery" class="mobile-nav-link" role="menuitem" tabindex="-1">Галерея</a>
+                </li>
+                <li class="mobile-nav-item" role="none">
+                    <a href="#contact" class="mobile-nav-link" role="menuitem" tabindex="-1">Контакты</a>
+                </li>
+                <li class="mobile-nav-item" role="none">
+                    <a href="tel:+79667430677" class="mobile-phone-link" role="menuitem" tabindex="-1">📞 +7 (966) 743-06-77</a>
+                </li>
+            </ul>
+            <div class="mobile-cta">
+                <button class="mobile-cta-button" data-modal="booking" tabindex="-1">Записаться онлайн</button>
             </div>
         </nav>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-slider">
-            <div class="slide active">
-                <div class="slide-bg">
-                    <img src="images/salon_stydio.jpg" alt="Салон красоты">
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-background">
+                <img src="https://i.pinimg.com/736x/89/11/1e/89111e6e286a2bc84df3d8898c7dc75b.jpg" alt="Легкие ткани на ветру, природная эстетика" class="hero-image" loading="eager">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Почувствуй свежесть</span>
+                        <span class="title-line">ветра в своём образе</span>
+                    </h1>
+                    <p class="hero-subtitle">Mistral Studio — салон красоты, где природная энергия и лёгкость становятся частью вашего стиля.</p>
+                    <div class="hero-actions">
+                        <button class="hero-cta-primary" data-modal="booking">Создать свой образ</button>
+                        <a href="#philosophy" class="hero-cta-secondary">Узнать о нас</a>
+                    </div>
                 </div>
-                <div class="slide-content">
-                    <h1 class="slide-title">Природная красота вашего стиля</h1>
-                    <p class="slide-description">Мы создаём естественные образы, подчёркивая вашу уникальность</p>
-                    <button class="btn btn-primary btn-large" data-modal="booking">Записаться онлайн</button>
+                <div class="scroll-indicator" aria-hidden="true">
+                    <span class="scroll-text">Листайте вниз</span>
+                    <div class="scroll-arrow">↓</div>
                 </div>
             </div>
-        </div>
-        <div class="hero-arrows">
-            <button class="arrow prev" aria-label="Предыдущий слайд">‹</button>
-            <button class="arrow next" aria-label="Следующий слайд">›</button>
-        </div>
-        <div class="hero-dots">
-            <button class="dot active" data-slide="0"></button>
-            <button class="dot" data-slide="1"></button>
-            <button class="dot" data-slide="2"></button>
-        </div>
-    </section>
+        </section>
 
-    <!-- Philosophy Section -->
-    <section class="philosophy">
-        <div class="container">
-            <div class="philosophy-content">
-                <h2 class="section-title">Naturel Studio — это...</h2>
-                <div class="philosophy-text">
-                    <p>Салон красоты «НАТЮРЕЛЬ» рад открыть свои двери перед ценителями прекрасного! Мы работаем для того, чтобы делать мир красивее, а вас, наши дорогие посетители, ещё и счастливее.</p>
-                    <p>Как Вы, наверное, знаете, в переводе с французского слово <strong>"naturel"</strong> означает <strong>"настоящий"</strong>, <strong>"чистый"</strong>, <strong>"естественный"</strong>. Именно эти три слова являются девизом нашего салона красоты!</p>
-                    <p>Наш лозунг <strong>«Природная красота Вашего стиля»</strong>! И именно этой линии мы держимся. Вы будете крайне удивлены, узнав, что способны выглядеть обворожительно, не утратив при этом естественность.</p>
+        <!-- Philosophy Section -->
+        <section class="philosophy-section section-padding" id="philosophy">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Наша суть</span>
+                    <h2 class="section-title">Философия Mistral</h2>
+                    <p class="section-intro">Свежесть, движение, естественность — три стихии, на которых строится наша работа.</p>
                 </div>
-                <div class="philosophy-image">
-                    <img src="images/salon_stydio1.jpg" alt="Салон">
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon" aria-hidden="true">🌬️</div>
+                        <h3 class="philosophy-card-title">Сила ветра</h3>
+                        <p class="philosophy-card-text">Мы верим, что истинная красота динамична и изменчива, как ветер. Мы не создаём статичных образов, а помогаем вам найти ту форму, которая подчёркивает вашу естественную подвижность и свободу.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon" aria-hidden="true">💨</div>
+                        <h3 class="philosophy-card-title">Лёгкость бытия</h3>
+                        <p class="philosophy-card-text">Наша цель — убрать всё лишнее. Как прохладный бриз освежает в зной, наши процедуры и образы призваны освежить ваше восприятие себя, даря ощущение невесомости и чистоты.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon" aria-hidden="true">🍃</div>
+                        <h3 class="philosophy-card-title">Природная гармония</h3>
+                        <p class="philosophy-card-text">Мы используем силу натуральных компонентов и техник, которые работают в гармонии с вашим телом, а не против него. Ваша красота — это продолжение природы.</p>
+                    </div>
                 </div>
-                <div class="philosophy-image">
-                    <img src="images/stojka-resepshn.webp" alt="Салон">
+                <div class="philosophy-quote">
+                    <blockquote>
+                        <p>"Mistral — это не просто название. Это обещание лёгкости, которое мы дарим каждому гостю."</p>
+                        <cite>— Команда Mistral Studio</cite>
+                    </blockquote>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Salons Section -->
-    <section class="salons" id="salons">
-        <div class="container">
-            <h2 class="section-title">6 салонов в Москве</h2>
-            <div class="salons-grid">
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Тульская">
-                    </div>
-                    <div class="salon-info">
-                        <h3>Тульская</h3>
-                        <p>Духовской переулок, 17, стр. 11</p>
-                        <p>м. Тульская</p>
-                        <a href="tel:+74951234501">+7 (495) 123-45-01</a>
-                    </div>
+        <!-- Rituals Section -->
+        <section class="rituals-section section-padding" id="rituals">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Уникальный опыт</span>
+                    <h2 class="section-title">Ритуалы Mistral</h2>
+                    <p class="section-intro">Каждый визит — это небольшое путешествие к себе, состоящее из нескольких шагов.</p>
                 </div>
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Раменки">
+                <div class="ritual-steps">
+                    <div class="ritual-step">
+                        <div class="step-number" aria-hidden="true">01</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Консультация «Направление ветра»</h3>
+                            <p class="step-description">Мы начинаем с глубокой беседы, чтобы понять ваш образ жизни, желания и настроение. Куда сегодня дует ваш внутренний ветер?</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="https://i.pinimg.com/736x/33/6a/43/336a43b6094b503e0d4884d41ec6a794.jpg" alt="Консультация в спокойной обстановке салона" loading="lazy">
+                        </div>
                     </div>
-                    <div class="salon-info">
-                        <h3>Раменки</h3>
-                        <p>Раменки, ул. Мосфильмовская, 88</p>
-                        <p>м. Университет</p>
-                        <a href="tel:+74951234502">+7 (495) 123-45-02</a>
+                    <div class="ritual-step">
+                        <div class="step-number" aria-hidden="true">02</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Процедура «Очищающий поток»</h3>
+                            <p class="step-description">Независимо от выбранной услуги, мы включаем элемент детокса — расслабляющий массаж головы, освежающую маску или ритуал с эфирными маслами.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="https://i.pinimg.com/736x/85/9e/71/859e71452a9b376d1f30440530699d8a.jpg" alt="Процесс ухода за кожей с натуральными средствами" loading="lazy">
+                        </div>
                     </div>
-                </div>
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1560076536-fc53f7d21e60?w=400" alt="Белорусская">
-                    </div>
-                    <div class="salon-info">
-                        <h3>Белорусская</h3>
-                        <p>ул. Тверская, 15</p>
-                        <p>м. Белорусская</p>
-                        <a href="tel:+74951234503">+7 (495) 123-45-03</a>
-                    </div>
-                </div>
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Комсомольская">
-                    </div>
-                    <div class="salon-info">
-                        <h3>Комсомольская</h3>
-                        <p>Комсомольская пл., 3</p>
-                        <p>м. Комсомольская</p>
-                        <a href="tel:+74951234504">+7 (495) 123-45-04</a>
-                    </div>
-                </div>
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Москва-Сити">
-                    </div>
-                    <div class="salon-info">
-                        <h3>Москва-Сити</h3>
-                        <p>Пресненская набережная, 10</p>
-                        <p>м. Деловой Центр</p>
-                        <a href="tel:+74951234505">+7 (495) 123-45-05</a>
-                    </div>
-                </div>
-                <div class="salon-card">
-                    <div class="salon-image">
-                        <img src="https://images.unsplash.com/photo-1560076536-fc53f7d21e60?w=400" alt="Академическая">
-                    </div>
-                    <div class="salon-info">
-                        <h3>Академическая</h3>
-                        <p>ул. Вавилова, 13</p>
-                        <p>м. Академическая</p>
-                        <a href="tel:+74951234506">+7 (495) 123-45-06</a>
+                    <div class="ritual-step">
+                        <div class="step-number" aria-hidden="true">03</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Фиксация «Эфирный след»</h3>
+                            <p class="step-description">Завершаем визит фиксацией образа и лёгким фирменным ароматическим туманом с индивидуальными нотами, который вы можете взять с собой в мини-версии.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="https://i.pinimg.com/736x/12/5f/22/125f2250af5924f3fb714284d746b91e.jpg" alt="Красивая упаковка индивидуального аромата" loading="lazy">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Наши услуги</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">💇</div>
-                    <h3>Парикмахерские услуги</h3>
-                    <ul>
-                        <li>Стрижки и укладки</li>
-                        <li>Окрашивание (Balayage, Airtouch)</li>
-                        <li>Лечение волос</li>
-                    </ul>
+        <!-- Services Section -->
+        <section class="services-section section-padding" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Что мы делаем</span>
+                    <h2 class="section-title">Услуги в потоке</h2>
+                    <p class="section-intro">Все услуги построены вокруг концепции лёгкости и естественности.</p>
                 </div>
-                <div class="service-item">
-                    <div class="service-icon">💅</div>
-                    <h3>Маникюр & Педикюр</h3>
-                    <ul>
-                        <li>Классический маникюр</li>
-                        <li>Аппаратный педикюр</li>
-                        <li>Наращивание ногтей</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">✨</div>
-                    <h3>Косметология</h3>
-                    <ul>
-                        <li>Уход за лицом</li>
-                        <li>Чистка</li>
-                        <li>Массаж лица</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">💄</div>
-                    <h3>Визаж</h3>
-                    <ul>
-                        <li>Дневной макияж</li>
-                        <li>Вечерний макияж</li>
-                        <li>Свадебный макияж</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">🌿</div>
-                    <h3>Массаж</h3>
-                    <ul>
-                        <li>Классический массаж</li>
-                        <li>Антицеллюлитный массаж</li>
-                        <li>Расслабляющий массаж</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">🎓</div>
-                    <h3>Обучение</h3>
-                    <ul>
-                        <li>Курсы парикмахеров</li>
-                        <li>Курсы визажистов</li>
-                        <li>Мастер-классы</li>
-                    </ul>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon" aria-hidden="true">✂️</div>
+                            <h3 class="service-card-title">Ветреные стрижки</h3>
+                        </div>
+                        <p class="service-card-description">Динамичные и лёгкие формы, которые красиво движутся и не требуют сложной укладки. Окрашивание с эффектом выгоревших на солнце прядей.</p>
+                        <ul class="service-features">
+                            <li>Консультация стилиста</li>
+                            <li>Стрижка или окрашивание</li>
+                            <li>Уходовая процедура для волос</li>
+                            <li>Финальная лёгкая укладка</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon" aria-hidden="true">🌸</div>
+                            <h3 class="service-card-title">Уход «Свежее дыхание»</h3>
+                        </div>
+                        <p class="service-card-description">Косметологические процедуры для лица, направленные на глубокое очищение, увлажнение и освежение. Акцент на здоровое сияние, а не на маскировку.</p>
+                        <ul class="service-features">
+                            <li>Диагностика кожи</li>
+                            <li>Индивидуальный подбор ухода</li>
+                            <li>Основная процедура</li>
+                            <li>Расслабляющий массаж лица</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon" aria-hidden="true">💅</div>
+                            <h3 class="service-card-title">Детали «Воздушная линия»</h3>
+                        </div>
+                        <p class="service-card-description">Идеальный маникюр и педикюр, визаж без тяжести. Мы создаём аккуратные, элегантные и дышащие образы для ваших рук, ног и лица.</p>
+                        <ul class="service-features">
+                            <li>Аппаратный маникюр/педикюр</li>
+                            <li>Лёгкое покрытие или натуральный вид</li>
+                            <li>Естественный дневной или вечерний макияж</li>
+                            <li>Советы по домашнему уходу</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <h2 class="section-title">Наши работы</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400" alt="Работа 1">
-                    <div class="gallery-overlay">
-                        <span>Стрижка и окрашивание</span>
-                    </div>
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Наша атмосфера</span>
+                    <h2 class="section-title">Галерея лёгкости</h2>
+                    <p class="section-intro">Посмотрите, как выглядит красота, вдохновлённая ветром.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400" alt="Работа 2">
-                    <div class="gallery-overlay">
-                        <span>Вечерний макияж</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400" alt="Работа 3">
-                    <div class="gallery-overlay">
-                        <span>Маникюр</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1554119921-6c2c948fd9b0?w=400" alt="Работа 4">
-                    <div class="gallery-overlay">
-                        <span>Косметология</span>
-                    </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/67/3a/e6/673ae6a3589927226cf50d60a4efd1c5.jpg" alt="Элегантный интерьер салона с растениями и натуральными материалами" loading="lazy">
+                        <figcaption class="gallery-caption">Наше пространство: свет, воздух, натуральные текстуры</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/0f/65/e6/0f65e6d9a9b0a5acbcbd9f6584529700.jpg" alt="Процесс создания лёгкой, воздушной укладки" loading="lazy">
+                        <figcaption class="gallery-caption">Момент творчества: создание стрижки с движением</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/a2/2a/ab/a22aab15e7b7f7f80833a6b2e44da33a.jpg" alt="Готовый образ клиентки с естественным макияжем и укладкой" loading="lazy">
+                        <figcaption class="gallery-caption">Результат: естественный образ, полный уверенности</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/1a/7f/23/1a7f239a992ee45f0f8cce33bc55edc9.jpg" alt="Детали интерьера: сухоцветы, керамика, спокойные тона" loading="lazy">
+                        <figcaption class="gallery-caption">Детали: каждая мелочь создаёт настроение</figcaption>
+                    </figure>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Booking CTA -->
-    <section class="booking-cta">
-        <div class="container">
-            <h2>Запишитесь на консультацию</h2>
-            <p>Первичная консультация специалиста — бесплатно</p>
-            <button class="btn btn-primary btn-large" data-modal="booking">Выбрать услугу</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="/" class="logo">
-                        <span class="logo-text">Naturel</span>
-                        <span class="logo-subtext">Studio</span>
-                    </a>
-                    <p class="footer-mission">Природная красота вашего стиля</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Салоны</h4>
-                    <ul>
-                        <li><a href="#salon-tulskaya">Тульская</a></li>
-                        <li><a href="#salon-ramenki">Раменки</a></li>
-                        <li><a href="#salon-belorusskaya">Белорусская</a></li>
-                        <li><a href="#salon-komsomolskaya">Комсомольская</a></li>
-                        <li><a href="#salon-moscow-city">Москва-Сити</a></li>
-                        <li><a href="#salon-akademicheskaya">Академическая</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Услуги</h4>
-                    <ul>
-                        <li><a href="#hair">Парикмахерские</a></li>
-                        <li><a href="#nails">Маникюр & Педикюр</a></li>
-                        <li><a href="#cosmetology">Косметология</a></li>
-                        <li><a href="#makeup">Визаж</a></li>
-                        <li><a href="#massage">Массаж</a></li>
-                    </ul>
-                </div>
-               <div class="footer-col">
-    <h4>Контакты</h4>
-    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-    <p>Email: <a href="mailto:info@naturel-studio.ru">info@naturel-studio.ru</a></p>
-
-    <!-- Соц-сети -->
-    <div class="social-links">
-        <a href="https://t.me/naturel_studio" target="_blank" rel="noopener" aria-label="Telegram">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.18 1.92-1.02 6.46-1.44 8.58-.18.92-.54 1.22-.8.76-.76-.56-1.7-1.24-2.6-1.92-.88-.66-1.96-1.46-2.94-2.2-.44-.34-.04-.8.42-.54 2.22 1.08 4.42 2.18 6.12 3.02.44.24.84-.18.56-.58-.58-.8-1.62-2.24-2.2-3.04-.22-.32.18-.7.48-.48 1.08.8 2.18 1.6 3.28 2.4.32.24.62-.16.4-.46z"/></svg>
-        </a>
-
-        <a href="https://wa.me/74951234567" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
-<defs>
-<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="-838.041016" y1="660.580994" x2="-838.041016" y2="660.342712" gradientTransform="matrix(166.597247,0,0,-166.597247,139635.315068,110050.975961)">
-<stop offset="0" style="stop-color:rgb(16.470588%,67.058824%,93.333333%);stop-opacity:1;"/>
-<stop offset="1" style="stop-color:rgb(13.333333%,61.960784%,85.098039%);stop-opacity:1;"/>
-</linearGradient>
-</defs>
-<g id="surface1">
-<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 40.015625 20.007812 C 40.015625 8.957031 31.058594 0 20.007812 0 C 8.957031 0 0 8.957031 0 20.007812 C 0 31.058594 8.957031 40.015625 20.007812 40.015625 C 31.058594 40.015625 40.015625 31.058594 40.015625 20.007812 Z M 40.015625 20.007812 "/>
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 9.046875 19.792969 C 14.878906 17.257812 18.757812 15.578125 20.707031 14.761719 C 26.253906 12.445312 27.421875 12.046875 28.171875 12.027344 C 28.339844 12.027344 28.703125 12.0625 28.953125 12.261719 C 29.15625 12.429688 29.203125 12.644531 29.238281 12.8125 C 29.269531 12.976562 29.304688 13.328125 29.269531 13.59375 C 28.972656 16.757812 27.671875 24.441406 27.003906 27.972656 C 26.722656 29.472656 26.171875 29.972656 25.640625 30.019531 C 24.472656 30.121094 23.589844 29.253906 22.472656 28.519531 C 20.707031 27.371094 19.726562 26.65625 18.007812 25.523438 C 16.027344 24.222656 17.308594 23.507812 18.441406 22.339844 C 18.742188 22.039062 23.855469 17.375 23.957031 16.960938 C 23.972656 16.910156 23.972656 16.710938 23.855469 16.609375 C 23.738281 16.511719 23.574219 16.542969 23.441406 16.578125 C 23.257812 16.609375 20.457031 18.476562 15.011719 22.15625 C 14.210938 22.707031 13.496094 22.972656 12.84375 22.957031 C 12.128906 22.941406 10.761719 22.558594 9.730469 22.222656 C 8.480469 21.824219 7.480469 21.609375 7.5625 20.90625 C 7.613281 20.542969 8.113281 20.175781 9.046875 19.792969 Z M 9.046875 19.792969 "/>
-</g>
-</svg>
-        </a>
-
-        <a href="https://instagram.com/naturel_studio" target="_blank" rel="noopener" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8A3.6 3.6 0 0020 16.4V7.6A3.6 3.6 0 0016.4 4H7.6m9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5M12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+        <!-- Contact & CTA Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <h2 class="section-title">Готовы поймать ветер?</h2>
+                            <p class="contact-intro">Приходите в нашу тихую гавань, чтобы обрести лёгкость. Мы находимся в уютном месте, куда легко добраться.</p>
+                        </div>
+                        <address class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">📍</span>
+                                <div>
+                                    <strong>Наш адрес</strong>
+                                    <p>Москва, ул. Свежая, 15<br><small>(5 минут от метро «Парк Культуры»)</small></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">📞</span>
+                                <div>
+                                    <strong>Телефон для записи</strong>
+                                    <p><a href="tel:+79667430677">+7 (966) 743-06-77</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">⏰</span>
+                                <div>
+                                    <strong>Часы работы</strong>
+                                    <p>Ежедневно с 10:00 до 22:00<br>Предварительная запись желательна.</p>
+                                </div>
+                            </div>
+                        </address>
+                        <div class="social-block">
+                            <p class="social-title">Следите за свежими бризами в соцсетях</p>
+                            <div class="social-links">
+                                <a href="https://t.me/lIllwhitelIlI" class="social-link telegram" target="_blank" rel="noopener noreferrer" aria-label="Наш Telegram канал">
+                                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.18 1.92-1.02 6.46-1.44 8.58-.18.92-.54 1.22-.8.76-.76-.56-1.7-1.24-2.6-1.92-.88-.66-1.96-1.46-2.94-2.2-.44-.34-.04-.8.42-.54 2.22 1.08 4.42 2.18 6.12 3.02.44.24.84-.18.56-.58-.58-.8-1.62-2.24-2.2-3.04-.22-.32.18-.7.48-.48 1.08.8 2.18 1.6 3.28 2.4.32.24.62-.16.4-.46z"/>
+                                    </svg>
+                                    <span>Telegram</span>
                                 </a>
-    </div>
-</div>
+                                <a href="https://instagram.com/user91_19" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Наш Instagram">
+                                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3>Запись на консультацию</h3>
+                            <p>Оставьте свои данные, и мы подберём для вас идеальное время и составим план визита.</p>
+                        </div>
+                        <form id="booking-form" class="booking-form" novalidate>
+                            <div class="form-group">
+                                <label for="client-name" class="form-label">Ваше имя *</label>
+                                <input type="text" id="client-name" name="name" class="form-input" placeholder="Например, Анна" required>
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-phone" class="form-label">Номер телефона *</label>
+                                <input type="tel" id="client-phone" name="phone" class="form-input" placeholder="+7 (XXX) XXX-XX-XX" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" required>
+                                <div class="form-error" id="phone-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-service" class="form-label">Интересующая услуга</label>
+                                <select id="client-service" name="service" class="form-select">
+                                    <option value="" selected>Выберите направление</option>
+                                    <option value="hair">Ветреные стрижки и окрашивание</option>
+                                    <option value="face">Уход «Свежее дыхание» для лица</option>
+                                    <option value="details">Детали «Воздушная линия» (маникюр/визаж)</option>
+                                    <option value="consult">Только консультация</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-message" class="form-label">Ваши пожелания или вопросы (необязательно)</label>
+                                <textarea id="client-message" name="message" class="form-textarea" rows="3" placeholder="Расскажите, что для вас важно..."></textarea>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="submit-button" id="form-submit">
+                                    <span class="button-text">Отправить заявку</span>
+                                    <span class="button-loader" aria-hidden="true"></span>
+                                </button>
+                                <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#privacy" class="privacy-link">политикой конфиденциальности</a>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Mistral Studio">
+                        <span class="footer-logo-symbol" aria-hidden="true">🌬️</span>
+                        <span class="footer-logo-text">Mistral Studio</span>
+                    </a>
+                    <p class="footer-tagline">Свежесть, воплощённая в образе.</p>
+                </div>
+                <div class="footer-links">
+                    <nav class="footer-nav" aria-label="Дополнительная навигация">
+                        <ul class="footer-nav-list">
+                            <li><a href="#philosophy">Философия</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#gallery">Галерея</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-contacts">
+                    <p><a href="tel:+79667430677">+7 (966) 743-06-77</a></p>
+                    <p>Москва, ул. Свежая, 15</p>
+                    <p>Ежедневно: 10:00 – 22:00</p>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Naturel Studio. Все права защищены.</p>
+                <p class="copyright">&copy; <span id="current-year">2024</span> Mistral Studio. Все права на легкий ветерок защищены.</p>
+                <p class="footer-credits">Создано с 🌬️ для тех, кто ценит свежесть.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Booking Modal -->
-    <div class="modal" id="booking-modal">
-        <div class="modal-overlay" data-modal-close></div>
-        <div class="modal-content">
-            <button class="modal-close" data-modal-close>×</button>
-            <h3>Онлайн-запись</h3>
-            <form class="booking-form">
-                <div class="form-group">
-                    <label for="name">Имя *</label>
-                    <input type="text" id="name" required>
+    <!-- ==================== MODAL (Booking) ==================== -->
+    <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title">Запись в Mistral</h3>
+                <button class="modal-close" data-modal-close aria-label="Закрыть окно">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Мы перезвоним вам в течение часа, чтобы согласовать детали и предложить удобное время.</p>
+                <!-- Форма из основного блока, можно продублировать или оставить сообщение -->
+                <div class="modal-message">
+                    <p>Спасибо за ваш интерес! Пожалуйста, заполните форму в разделе <a href="#contact" data-modal-close>«Контакты»</a> или позвоните нам по номеру <a href="tel:+79667430677">+7 (966) 743-06-77</a>.</p>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Телефон *</label>
-                    <input type="tel" id="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Услуга</label>
-                    <select id="service">
-                        <option value="">Выберите услугу</option>
-                        <option value="hair">Парикмахерские услуги</option>
-                        <option value="nails">Маникюр & Педикюр</option>
-                        <option value="cosmetology">Косметология</option>
-                        <option value="makeup">Визаж</option>
-                        <option value="massage">Массаж</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="salon">Салон</label>
-                    <select id="salon">
-                        <option value="">Выберите салон</option>
-                        <option value="tulskaya">Тульская</option>
-                        <option value="ramenki">Раменки</option>
-                        <option value="belorusskaya">Белорусская</option>
-                        <option value="komsomolskaya">Комсомольская</option>
-                        <option value="moscow-city">Москва-Сити</option>
-                        <option value="akademicheskaya">Академическая</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Отправить заявку</button>
-            </form>
+            </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="script.js" defer></script>
 </body>
 </html>
