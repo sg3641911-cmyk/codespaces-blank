@@ -631,124 +631,7 @@ a:hover {
     }
 }
 
-/* ==================== PHILOSOPHY SECTION ==================== */
-.philosophy-section {
-    background: linear-gradient(180deg, var(--color-cloud) 0%, var(--color-mistral-pale) 100%);
-}
 
-.section-header {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-}
-
-.section-label {
-    display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--color-mistral);
-    margin-bottom: var(--space-sm);
-    padding: 0.5rem 1.5rem;
-    background: rgba(106, 169, 201, 0.1);
-    border-radius: var(--radius-full);
-}
-
-.section-title {
-    margin-bottom: var(--space-sm);
-}
-
-.section-intro {
-    font-size: 1.125rem;
-    color: var(--color-stone);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.philosophy-grid {
-    display: grid;
-    gap: 2rem;
-    margin-bottom: var(--space-lg);
-}
-
-@media (min-width: 768px) {
-    .philosophy-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.philosophy-card {
-    background: var(--color-cloud);
-    padding: 2rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-subtle);
-    transition: all var(--transition-base);
-    border: 1px solid transparent;
-}
-
-.philosophy-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
-    border-color: var(--color-mistral-light);
-}
-
-.philosophy-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-}
-
-.philosophy-card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--color-mistral-dark);
-}
-
-.philosophy-card-text {
-    color: var(--color-stone);
-    line-height: 1.7;
-}
-
-.philosophy-quote {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem;
-    background: var(--color-cloud);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-subtle);
-    position: relative;
-}
-
-.philosophy-quote::before {
-    content: '"';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 8rem;
-    font-family: var(--font-secondary);
-    color: var(--color-mistral-light);
-    opacity: 0.3;
-    line-height: 1;
-}
-
-.philosophy-quote blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: var(--color-stone-dark);
-    text-align: center;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.philosophy-quote cite {
-    display: block;
-    text-align: center;
-    font-size: 1rem;
-    color: var(--color-mistral);
-    font-style: normal;
-    font-weight: 500;
-}
 
 /* ==================== RITUALS SECTION ==================== */
 .rituals-section {
@@ -960,6 +843,125 @@ a:hover {
 
 .gallery-item:hover .gallery-caption {
     transform: translateY(0);
+}
+
+/* ==================== PHILOSOPHY SECTION ==================== */
+.philosophy-section {
+    background: linear-gradient(180deg, var(--color-cloud) 0%, var(--color-mistral-pale) 100%);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-mistral);
+    margin-bottom: var(--space-sm);
+    padding: 0.5rem 1.5rem;
+    background: rgba(106, 169, 201, 0.1);
+    border-radius: var(--radius-full);
+}
+
+.section-title {
+    margin-bottom: var(--space-sm);
+}
+
+.section-intro {
+    font-size: 1.125rem;
+    color: var(--color-stone);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.philosophy-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.philosophy-card {
+    background: var(--color-cloud);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-subtle);
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-mistral-light);
+}
+
+.philosophy-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.philosophy-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-mistral-dark);
+}
+
+.philosophy-card-text {
+    color: var(--color-stone);
+    line-height: 1.7;
+}
+
+.philosophy-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--color-cloud);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-subtle);
+    position: relative;
+}
+
+.philosophy-quote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    font-family: var(--font-secondary);
+    color: var(--color-mistral-light);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.philosophy-quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--color-stone-dark);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.philosophy-quote cite {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-mistral);
+    font-style: normal;
+    font-weight: 500;
 }
 
 /* ==================== CONTACT SECTION ==================== */
