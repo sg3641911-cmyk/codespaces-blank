@@ -194,7 +194,7 @@
             width: 50%;
             max-width: 700px;
             height: 90%;
-            background-image: url(https://github.com/sg3641911-cmyk/codespaces-blank.wiki.git);
+            background-image: url('https://github.com/sg3641911-cmyk/codespaces-blank.wiki.git');
             background-size: cover;
             background-position: center;
             border-radius: 30px 0 0 30px;
@@ -227,15 +227,13 @@
         }
 
         .section-title:after {
-            content:;
+            content: "🌬️";
             position: absolute;
             bottom: -40px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 2rem;
         }
-
-        
 
         /* Услуги */
         .services {
@@ -479,6 +477,18 @@
             transform: translateY(-5px);
         }
 
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--wind-blue);
+        }
+
         .footer-bottom {
             text-align: center;
             padding-top: 40px;
@@ -544,9 +554,9 @@
         </div>
         
         <nav>
-            <a href="#philosophy">Философия</a>
             <a href="#services">Услуги</a>
             <a href="#gallery">Галерея</a>
+            <a href="#philosophy">Философия</a>
             <a href="#booking">Запись</a>
             <a href="#contact">Контакты</a>
         </nav>
@@ -561,32 +571,9 @@
         <div class="hero-content">
             <h1>Красота в движении<br><span>Природная эстетика</span></h1>
             <p>Почувствуй свежесть ветра в своём образе. Mistral — это канон красоты, где природная энергия и лёгкость становятся частью вашего стиля.</p>
-            <a href="#philosophy" class="cta-button">Создать свой образ</a>
+            <a href="#services" class="cta-button">Создать свой образ</a>
         </div>
         <div class="hero-image"></div>
-    </section>
-
-    <!-- Философия -->
-    <section id="philosophy">
-        <h2 class="section-title">Философия Mistral</h2>
-        <div class="philosophy-grid">
-            <div class="philosophy-card">
-               <div class="philosophy-card">
-    <div class="philosophy-icon"><i class="fas fa-wind"></i></div>
-    <h3>Сила ветра</h3>
-    <p>Мы верим, что истинная красота динамична и изменчива, как ветер. Мы не создаём статичных образов, а помогаем найти ту форму, которая поддерживает вашу естественную подвижность.</p>
-</div>
-<div class="philosophy-card">
-    <div class="philosophy-icon"><i class="fas fa-feather"></i></div>
-    <h3>Лёгкость бытия</h3>
-    <p>Наша цель — убрать всё лишнее. Как прохладный бриз освежает в зной, наши процедуры освежают ваше восприятие себя, даря ощущение невесомости и чистоты.</p>
-</div>
-            <div class="philosophy-card">
-                <div class="philosophy-icon"><i class="fas fa-spa"></i></div>
-                <h3>Природная гармония</h3>
-                <p>Мы используем силу натуральных компонентов и техник, которые работают в гармонии с вашим телом, а не против него. Ваша красота — это продолжение природы.</p>
-            </div>
-        </div>
     </section>
 
     <!-- Услуги -->
@@ -672,6 +659,28 @@
         </div>
     </section>
 
+    <!-- Философия -->
+    <section id="philosophy">
+        <h2 class="section-title">Философия Mistral</h2>
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <div class="philosophy-icon"><i class="fas fa-wind"></i></div>
+                <h3>Сила ветра</h3>
+                <p>Мы верим, что истинная красота динамична и изменчива, как ветер. Мы не создаём статичных образов, а помогаем найти ту форму, которая поддерживает вашу естественную подвижность.</p>
+            </div>
+            <div class="philosophy-card">
+                <div class="philosophy-icon"><i class="fas fa-feather"></i></div>
+                <h3>Лёгкость бытия</h3>
+                <p>Наша цель — убрать всё лишнее. Как прохладный бриз освежает в зной, наши процедуры освежают ваше восприятие себя, даря ощущение невесомости и чистоты.</p>
+            </div>
+            <div class="philosophy-card">
+                <div class="philosophy-icon"><i class="fas fa-spa"></i></div>
+                <h3>Природная гармония</h3>
+                <p>Мы используем силу натуральных компонентов и техник, которые работают в гармонии с вашим телом, а не против него. Ваша красота — это продолжение природы.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Запись -->
     <section id="booking" class="booking">
         <h2 class="section-title">Готовы поймать ветер?</h2>
@@ -725,25 +734,35 @@
                 <div class="footer-logo">MISTRAL</div>
                 <p>Свежесть, воплощённая в образе. Философия лёгкости, движения и естественности.</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/user91_19?igsh=YWRqa2NwN3duaHF3" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/lIllwhitelIlI" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/79667430677" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             
             <div>
                 <h4 style="font-size: 1.3rem; margin-bottom: 25px;">Контакты</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Махачкала, ул. Магомеда Ярагского, 59 </p>
-                <p><i class="fas fa-phone"></i> +7 (966) 743-06-77</p>
-                <p style="margin-top: 15px;"><i class="fas fa-clock"></i> Ежедневно: 10:00 - 22:00</p>
+                <p>
+                    <a href="https://yandex.ru/maps/?text=Махачкала, ул. Магомеда Ярагского, 59" target="_blank" class="contact-link">
+                        <i class="fas fa-map-marker-alt"></i> Махачкала, ул. Магомеда Ярагского, 59
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+79667430677" class="contact-link">
+                        <i class="fas fa-phone"></i> +7 (966) 743-06-77
+                    </a>
+                </p>
+                <p style="margin-top: 15px;">
+                    <i class="fas fa-clock"></i> Ежедневно: 10:00 - 22:00
+                </p>
             </div>
             
             <div>
                 <h4 style="font-size: 1.3rem; margin-bottom: 25px;">Быстрые ссылки</h4>
-                <p><a href="#philosophy" style="color: white; text-decoration: none;">Философия</a></p>
-                <p><a href="#services" style="color: white; text-decoration: none;">Услуги</a></p>
-                <p><a href="#gallery" style="color: white; text-decoration: none;">Галерея</a></p>
-                <p><a href="#booking" style="color: white; text-decoration: none;">Онлайн-запись</a></p>
+                <p><a href="#services" class="contact-link">Услуги</a></p>
+                <p><a href="#gallery" class="contact-link">Галерея</a></p>
+                <p><a href="#philosophy" class="contact-link">Философия</a></p>
+                <p><a href="#booking" class="contact-link">Онлайн-запись</a></p>
             </div>
         </div>
         
@@ -777,7 +796,7 @@
         });
 
         // Плавная прокрутка
-        document.querySelectorAll('nav a').forEach(anchor => {
+        document.querySelectorAll('nav a, .contact-link[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
